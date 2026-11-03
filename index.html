@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estéticas · Menú y acordeón con jQuery</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ============ CABECERA CON MENÚ RESPONSIVE ============ -->
+    <header class="cabecera">
+        <div class="cabecera__barra">
+            <a href="#inicio" class="logo">estéticas<span>.</span></a>
+
+            <!-- Solo se ve en móvil -->
+            <button type="button" class="menu-btn" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- En móvil está oculto hasta pulsar el botón -->
+        <nav class="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#esteticas">Estéticas</a>
+            <a href="#que-es">¿Qué es una estética?</a>
+            <a href="#fuente">Fuente</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ============ INTRO ============ -->
+        <section class="intro" id="inicio">
+            <p class="intro__kicker">Diseño Web Avanzado · Tema 4</p>
+            <h1>Un pequeño catálogo de estéticas</h1>
+            <p class="intro__texto" id="que-es">Una estética es un estilo visual reconocible: una combinación de colores, materiales, objetos y referencias que hace que algo se identifique al momento. Internet las ha multiplicado y les ha puesto nombre.</p>
+        </section>
+
+        <!-- ============ ACORDEÓN ============ -->
+        <section class="acordeon" id="esteticas">
+
+            <!-- Cada item tiene un botón (la "pregunta") y justo después su contenido -->
+            <div class="acordeon__item">
+                <button type="button" class="acordeon__titulo">
+                    <span class="punto punto--vaporwave"></span>
+                    Vaporwave
+                </button>
+                <div class="acordeon__contenido">
+                    <p>Nació a principios de la década de 2010 como género de música electrónica y movimiento artístico surgido en internet. Mira con nostalgia e ironía la cultura de consumo de los años 80 y 90.</p>
+                    <p><strong>Elementos visuales:</strong> rosa y cian pastel, estatuas grecorromanas, palmeras, suelos de baldosa, logotipos de Windows 95, glitches y centros comerciales vacíos.</p>
+                </div>
+            </div>
+
+            <div class="acordeon__item">
+                <button type="button" class="acordeon__titulo">
+                    <span class="punto punto--cottagecore"></span>
+                    Cottagecore
+                </button>
+                <div class="acordeon__contenido">
+                    <p>Se inspira en una visión idealizada de la vida rural y del campo. Valora lo hecho a mano, la calma y el contacto con la naturaleza, y se popularizó en comunidades como Tumblr.</p>
+                    <p><strong>Elementos visuales:</strong> colores desvaídos (rosa claro, verde oliva, marfil, ocre), cuadros vichy, estampados florales, encajes, cabañas, huertos, flores prensadas y juegos de té antiguos.</p>
+                </div>
+            </div>
+
+            <div class="acordeon__item">
+                <button type="button" class="acordeon__titulo">
+                    <span class="punto punto--y2k"></span>
+                    Y2K
+                </button>
+                <div class="acordeon__contenido">
+                    <p>Dominó la cultura popular aproximadamente entre 1995 y 2004, y toma su nombre del famoso "efecto 2000". Refleja el optimismo tecnológico del cambio de milenio.</p>
+                    <p><strong>Elementos visuales:</strong> cromados, azul hielo, blanco brillante, degradados, formas 3D redondeadas y brillantes, iconos de trazo grueso y los primeros móviles de tapa.</p>
+                </div>
+            </div>
+
+            <div class="acordeon__item">
+                <button type="button" class="acordeon__titulo">
+                    <span class="punto punto--frutiger"></span>
+                    Frutiger Aero
+                </button>
+                <div class="acordeon__contenido">
+                    <p>Estética de diseño muy presente entre mediados de los 2000 y principios de los 2010, también conocida como "Web 2.0 Gloss". Su nombre viene de las tipografías de Adrian Frutiger y de Windows Aero.</p>
+                    <p><strong>Elementos visuales:</strong> superficies brillantes y realistas, burbujas, agua, peces tropicales, praderas verdes bajo cielos azules, auroras y destellos de luz, en una paleta de blanco, verde y azul.</p>
+                </div>
+            </div>
+
+            <div class="acordeon__item">
+                <button type="button" class="acordeon__titulo">
+                    <span class="punto punto--academia"></span>
+                    Dark Academia
+                </button>
+                <div class="acordeon__contenido">
+                    <p>Gira en torno a la literatura clásica, el autoconocimiento y la pasión por aprender. Su principal referencia son los uniformes de los internados de los años 40.</p>
+                    <p><strong>Elementos visuales:</strong> negro, gris, beis, marrón, verde oscuro y burdeos; tweed y lana; americanas, jerséis de cuello alto y gabardinas; bibliotecas a la luz de las velas, cafés y museos.</p>
+                </div>
+            </div>
+
+            <div class="acordeon__item">
+                <button type="button" class="acordeon__titulo">
+                    <span class="punto punto--cyberpunk"></span>
+                    Cyberpunk
+                </button>
+                <div class="acordeon__contenido">
+                    <p>Surge en la ciencia ficción de los años 80 con un lema claro: "high tech, low life", alta tecnología y mala vida. Neuromante, de William Gibson, y Akira son algunas de sus referencias clave.</p>
+                    <p><strong>Elementos visuales:</strong> ciudades llenas de neones, junglas urbanas, gabardinas, botas y ropa negra brillante, megacorporaciones y futuros distópicos.</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ============ PIE ============ -->
+    <footer class="pie" id="fuente">
+        <p>Textos resumidos a partir de <a href="https://aesthetics.fandom.com/wiki/Aesthetics_Wiki" target="_blank" rel="noopener">Aesthetics Wiki</a> (Fandom), con licencia CC BY-SA.</p>
+    </footer>
+
+    <!-- Enlaza aquí jQuery y vuestro script -->
+
+</body>
+</html>
