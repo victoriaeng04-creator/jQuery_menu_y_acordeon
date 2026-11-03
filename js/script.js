@@ -1,3 +1,8 @@
-// Seleccion body jQuery
+// Seleccionamos todos los botones del acordeon 
 
-$("body").css("background-color", "aqua");
+//Aquí van seis elementos
+$(".acordeon__titulo").on("click", function(){
+    
+    console.log(this);
+    
+})
