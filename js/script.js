@@ -7,6 +7,11 @@ $(".menu-btn").on("click", function(){
     $(this).toggleClass("abierto");
 })
 
+// menu se cierra en versión móvil al hacer click
+//1.seleccionar cn jquery opciones del menu y añadirle el evento click
+//menu se cierra solo y con slide
+//quitamos la clase abierto al botón menú
+
 //Aquí van seis elementos
 $(".acordeon__titulo").on("click", function(){
     
